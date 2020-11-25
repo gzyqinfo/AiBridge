@@ -1,0 +1,12 @@
+2020-11-14 12:53:02,299 [INFO] main Submit the task specified by the runnable to the executor service.
+2020-11-14 12:53:02,305 [INFO] pool-1-thread-1 Start to send message to 14743690238
+2020-11-14 12:53:03,365 [INFO] pool-1-thread-1 {"Message":"模板变量缺少对应参数值","RequestId":"017D484F-87B6-4093-9D0B-F9160A0F9070","Code":"isv.TEMPLATE_MISSING_PARAMETERS"}
+2020-11-14 12:54:04,924 [INFO] main Submit the task specified by the runnable to the executor service.
+2020-11-14 12:54:04,927 [INFO] pool-1-thread-1 Start to send message to 14743690238
+2020-11-14 12:54:05,682 [INFO] pool-1-thread-1 {"Message":"JSON参数不合法","RequestId":"1D186CD8-EFF1-461C-980D-3DD58C21C031","Code":"isv.INVALID_JSON_PARAM"}
+2020-11-14 12:54:49,319 [INFO] main Submit the task specified by the runnable to the executor service.
+2020-11-14 12:54:49,324 [INFO] pool-1-thread-1 Start to send message to 14743690238
+2020-11-14 12:54:50,308 [INFO] pool-1-thread-1 {"Message":"OK","RequestId":"76518DA9-9B2E-4BD9-9745-0C6B687C21DC","BizId":"546423905329690104^0","Code":"OK"}
+2020-11-14 12:57:57,128 [INFO] main Submit the task specified by the runnable to the executor service.
+2020-11-14 12:57:57,132 [INFO] pool-1-thread-1 Start to send message to 13602499238,13049861488
+2020-11-14 12:57:58,102 [INFO] pool-1-thread-1 {"Message":"OK","RequestId":"1BA708FA-1014-4FFB-B43A-2EEFE4117AB1","BizId":"751602905329878051^0","Code":"OK"}

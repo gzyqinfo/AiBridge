@@ -1,0 +1,35 @@
+2020-11-12 12:09:31,142 [INFO] main current IP address : 10.17.0.4/EltondeMacBook-Pro.local/10.17.0.4
+2020-11-12 12:09:32,221 [INFO] main jetty-9.1.1.v20140108
+2020-11-12 12:09:32,248 [WARN] main FAILED ServerConnector@184497d1{HTTP/1.1}{0.0.0.0:8001}: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:336)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.glassfish.jersey.jetty.JettyHttpContainerFactory.createServer(JettyHttpContainerFactory.java:311)
+	at org.glassfish.jersey.jetty.JettyHttpContainerFactory.createServer(JettyHttpContainerFactory.java:137)
+	at com.yunqiao.server.App.main(App.java:39)
+2020-11-12 12:09:32,249 [WARN] main FAILED org.eclipse.jetty.server.Server@172ca72b: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:336)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69)
+	at org.glassfish.jersey.jetty.JettyHttpContainerFactory.createServer(JettyHttpContainerFactory.java:311)
+	at org.glassfish.jersey.jetty.JettyHttpContainerFactory.createServer(JettyHttpContainerFactory.java:137)
+	at com.yunqiao.server.App.main(App.java:39)
+2020-11-12 12:09:43,250 [INFO] Thread-0 Application stopped.
