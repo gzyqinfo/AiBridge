@@ -114,7 +114,7 @@ public class EasyMonitorTest {
     @Test
     public void testSendingSMS() throws InterruptedException {
 
-//        SmsManager.getInstance().sendSms("13602499238", 19,"天网2号", System.currentTimeMillis(), "白烟");
+        SmsManager.getInstance().sendSms("13602499238", 19,"天网2号", System.currentTimeMillis(), "白烟");
         Thread.sleep(20000);
     }
 }

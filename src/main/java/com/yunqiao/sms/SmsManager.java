@@ -18,8 +18,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
+import java.io.UnsupportedEncodingException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
+import java.util.Base64;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -31,8 +33,18 @@ public class SmsManager {
 
 
     // Access Key (在阿里云访问控制台寻找)
-    private static final String accessKeyId = "LTAI4GJbcjWNw45ADa9L8HTF";
-    private static final String accessKeySecret = "uABTchYXv0aRHwCdU6f1DbXU1Q9jhG";
+    private static String accessKeyId = null;
+    private static String accessKeySecret = null;
+
+    static {
+        try {
+            accessKeyId = new String(Base64.getDecoder().decode(PropertyUtil.readValue("sms.ak")), "utf-8");
+            accessKeySecret = new String(Base64.getDecoder().decode(PropertyUtil.readValue("sms.sk")), "utf-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     private SmsManager () {
         //可自助调整超时时间
